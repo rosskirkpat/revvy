@@ -8,7 +8,7 @@ import (
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/rosskirkpat/descale/pkg/client"
+	"github.com/rosskirkpat/revvy/pkg/client"
 )
 
 // StatefulSet wraps a Kubernetes StatefulSet.

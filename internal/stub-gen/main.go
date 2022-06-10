@@ -21,7 +21,7 @@ import (
 	rbacv1 "k8s.io/api/rbac/v1"{{ end }}
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/rosskirkpat/descale/pkg/client"
+	"github.com/rosskirkpat/revvy/pkg/client"
 )
 
 // {{ .Type }} wraps a Kubernetes {{ .Type }}.

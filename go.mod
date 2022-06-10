@@ -1,4 +1,4 @@
-module github.com/rosskirkpat/descale
+module github.com/rosskirkpat/revvy
 
 go 1.17
 

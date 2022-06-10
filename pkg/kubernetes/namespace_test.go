@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/rosskirkpat/descale/pkg/client"
+	"github.com/rosskirkpat/revvy/pkg/client"
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"
