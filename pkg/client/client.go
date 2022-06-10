@@ -27,6 +27,12 @@ type Client struct {
 	Config     rest.Config
 }
 
+type ScaleConfig struct {
+	Namespace string
+	Requested int
+	Obj       runtime.Object
+}
+
 func IsNamespaced(gvr schema.GroupVersionResource, mapper meta.RESTMapper) (bool, error) {
 	kind, err := mapper.KindFor(gvr)
 	if err != nil {
