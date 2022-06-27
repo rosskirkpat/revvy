@@ -1,0 +1,24 @@
+podSpec:
+  nodeSelector:
+    kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+  containers: []
+  restartPolicy: Never
+  serviceAccountName: sonobuoy-serviceaccount
+sonobuoy-config:
+  driver: Job
+  plugin-name: kscale
+  result-format: junit
+  source_url: https://raw.githubusercontent.com/rosskirkpat/revvy/main/plugin/kscale/kscale.yaml
+  description: A plugin for performing scale testing against a kubernetes cluster
+
+spec:
+  command:
+  - ./run.sh
+  image: cptrosskirk/kscale:latest
+  name: plugin
+  resources: {}
+  volumeMounts:
+  - mountPath: /tmp/sonobuoy/results
+    name: results
+
